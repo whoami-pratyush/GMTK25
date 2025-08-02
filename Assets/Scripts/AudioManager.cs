@@ -10,8 +10,31 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
 
+    private GameManager gameManager;
+
+
+
     private void Awake()
     {
+        //GameObject gmObject = GameObject.FindGameObjectWithTag("GameManager");
+
+        //if (gmObject != null)
+        //{
+        //    gameManager = gmObject.GetComponent<GameManager>();
+
+        //    if (gameManager != null)
+        //    {
+        //        gameManager.PlayClickSound += GameManager_PlayClickSound;
+        //    }
+        //    else
+        //    {
+        //        Debug.LogError("GameManager script not found on tagged GameObject.");
+        //    }
+        //}
+        //else
+        //{
+        //    Debug.LogError("GameObject with tag 'GameManager' not found.");
+        //}
         if (instance == null)
         {
             instance = this;
@@ -21,7 +44,16 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        //gameManager.PlayClickSound += GameManager_PlayClickSound;
+
     }
+
+    //private void GameManager_PlayClickSound()
+    //{
+    //    ClickSoundPlayer();
+    //}
+
     private void Start()
     {
         musicSource.clip = BGM;
@@ -30,6 +62,8 @@ public class AudioManager : MonoBehaviour
 
     public void ClickSoundPlayer()
     {
-        sfxSource.PlayOneShot(clickSFX);
+
+        sfxSource.clip = clickSFX;
+        sfxSource.PlayOneShot(sfxSource.clip);
     }
 }
