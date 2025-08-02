@@ -1,23 +1,27 @@
 using UnityEngine;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Loader : MonoBehaviour
 {
-    public static void LoadCounter()
+    [Header("Scene Load Settings")]     // Set this in the Inspector
+    public float delay = 0.5f;      // Optional delay time
+
+    // Assign this in UI Button OnClick
+    public void LoadSceneDelayed(string sceneToLoad)
     {
-        SceneManager.LoadScene("CounterScene");
+        StartCoroutine(LoadSceneAfterDelay(sceneToLoad, delay));
     }
-    public static void LoadKitchen()
+
+    private IEnumerator LoadSceneAfterDelay(string sceneName, float delay)
     {
-        SceneManager.LoadScene("KitchenScene");
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
     }
-    public static void LoadSettings()
+
+    // Optional: Call this from code to load instantly
+    public void LoadSceneImmediate(string sceneToLoad)
     {
-        SceneManager.LoadScene("SettingsScene");
-    }
-    public static void LoadMenu()
-    {
-        SceneManager.LoadScene("MainMenuScene");
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
