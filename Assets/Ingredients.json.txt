@@ -1,0 +1,35 @@
+{
+  "beans": [
+    "Arabica", "Robusta", "Liberica", "Excelsa", "Typica", "Geisha", "Bourbon"
+  ],
+  "coffee_base": [
+    "Espresso", "Ristretto", "Doppio", "Red Eye", "Americano", "Latte",
+    "Cappuccino", "Flat White", "Café au Lait", "Cortado", "Macchiato", "Mocha",
+    "Black Eye", "Café Bonbon", "Breve", "Cortadito", "Espresso con Panna",
+    "Espressino", "Frappe", "Galao", "Bingo", "Lungo"
+  ],
+  "roast": [
+    "Light", "Medium", "Dark", "Blonde", "City", "Full City", "Vienna",
+    "French", "Italian"
+  ],
+  "brewing": [
+    "Drip", "Pour Over", "Espresso", "Cold Brew", "Cafetière"
+  ],
+  "syrups": [
+    "Vanilla", "Chocolate", "Caramel", "Strawberry", "Cookie", "Crumble",
+    "Mocha", "Hazelnut", "Lavender", "Salted Caramel", "Matcha", "Cinnamon",
+    "Toffee", "Mint", "Raspberry", "Gingerbread", "Coconut", "Buttered Pecan",
+    "Pumpkin Spice", "Orange", "Pistachio", "Honey", "Cardamom",
+    "White Chocolate", "Mango", "Blueberry", "Peach", "Passion Fruit"
+  ],
+  "alternatives": [
+    "Cold Milk", "Steamed Milk", "Vanilla Creme", "Skimmed Milk", "Almond",
+    "Oat Milk", "Dragon Fruit", "Non-Dairy Creamer", "Soy", "Coconut", "Foam",
+    "Iced", "Horchata", "Lemonade", "Dolce", "Tea", "Iced Tea", "Hibiscus Tea",
+    "Lemon Tea", "Matcha", "Chai", "Agua De Agua", "Green Tea", "Sakura Tea"
+  ],
+  "chaos": [
+    "Plutonium", "Battery Acid", "Iron Oxide", "Hairball", "20 Cocktail Umbrellas",
+    "Swirly Straws", "Papaya", "Shampoo", "Squid Ink", "Protein Powder", "Creatine"
+  ]
+}
