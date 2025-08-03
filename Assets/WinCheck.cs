@@ -1,11 +1,11 @@
-using NUnit.Framework;
+using Unity.VisualScripting;
 using UnityEngine;
-using System.Collections.Generic;
 
-public class PlayerController : MonoBehaviour
+public class WinCheck : MonoBehaviour
 {
-    public CustomerController cc;
-    private List<string> list;
+    public CompareMaster check;
+    int i = PlayerPrefs.GetInt("Check");
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,5 +17,12 @@ public class PlayerController : MonoBehaviour
     {
         
     }
-    
+    public void Wincheck()
+    {
+        if (i == 1)
+        {
+            
+        }
+    }
+   
 }
