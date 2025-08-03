@@ -10,6 +10,10 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
 
+    private GameManager gameManager;
+
+
+
     private void Awake()
     {
         if (instance == null)
@@ -21,7 +25,10 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
+
+
     private void Start()
     {
         musicSource.clip = BGM;
@@ -30,6 +37,8 @@ public class AudioManager : MonoBehaviour
 
     public void ClickSoundPlayer()
     {
-        sfxSource.PlayOneShot(clickSFX);
+
+        sfxSource.clip = clickSFX;
+        sfxSource.PlayOneShot(sfxSource.clip);
     }
 }
