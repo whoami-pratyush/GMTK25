@@ -22,7 +22,7 @@ public class CarSpawning : MonoBehaviour
         {
             Instantiate(car,transform.position,transform.rotation);
             timer = 0f;
-            spawnrate = Random.Range(0, 35);
+            spawnrate = Random.Range(1, 35);
         }
     }
 }
