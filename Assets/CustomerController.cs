@@ -58,7 +58,7 @@ public class CustomerController: MonoBehaviour
     }
     private void Awake()
     {
-        roll = new int[25];
+        roll = new int[100];
         roll = rngmachine.generateseed();
         masterlist = customerlist();
         

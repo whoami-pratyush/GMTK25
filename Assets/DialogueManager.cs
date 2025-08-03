@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using NUnit.Framework;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -11,11 +12,13 @@ public class DialogueSystem : MonoBehaviour
     private int dialogueIndex = 0;
     public int startlength ;
     public int loopstart ;
-    private int end = 25;
+    private int end = 100;
     private bool loopbool = false;
     public CustomerController cc;
     private List<string> list;
     int i = 0;
+    [SerializeField]
+    
 
     public TextMeshProUGUI dialogueText;
     public Button nextButton;
@@ -73,5 +76,10 @@ public class DialogueSystem : MonoBehaviour
             dialogueText.text = "";
             nextButton.interactable = false;
         }
+      
+    }
+    public int geti()
+    {
+        return i;
     }
 }

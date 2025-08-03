@@ -4,7 +4,16 @@
 TagManager:
   serializedVersion: 3
   tags:
+<<<<<<< Updated upstream
   - SoundManager
+=======
+  - GameManager
+  - AudioManager
+  - SFXSlider
+  - MusicSlider
+  - ScoreBoard
+  - ButtonController
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
